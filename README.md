@@ -29,9 +29,9 @@
 
     ./shoichi.rb
     ./data/
-      |- shoichi.csv   # 商品データ
+      |- shoichi.csv # 商品データ
 
-      |- <product_id>/ # 画像データ
-      |- <product_id>/ # 画像データ
-      |- <product_id>/ # 画像データ
+      |- <itemCode>/ # 画像データ
+      |- <itemCode>/ # 画像データ
+      |- <itemCode>/ # 画像データ
 
