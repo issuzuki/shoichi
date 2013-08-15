@@ -6,6 +6,7 @@
       @option:
         --itemCodes: 商品コードカンマ区切り
         --nocsv    : csv出力なし
+        --nonum    : 在庫数データなし
         --noimg    : img出力なし
 
       @example

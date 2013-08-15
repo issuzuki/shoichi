@@ -56,7 +56,7 @@ end.parse!
 
 # ## help
 if options[:help]
-  puts "USAGE: bundle exec ruby shoichi.rb [--nocsv] [--noimg] --itemCodes <itemCode>,<itemCode>,<itemCode>,..."
+  puts "USAGE: bundle exec ruby shoichi.rb [--nocsv] [--nonum] [--noimg] --itemCodes <itemCode>,<itemCode>,<itemCode>,..."
   exit(0)
 end
 
