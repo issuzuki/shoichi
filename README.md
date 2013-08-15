@@ -1,10 +1,15 @@
 # shoichi
 
-    $ bundle exec ruby shoichi.rb
+    $ bundle exec ruby shoichi.rb --itemCodes <itemCode>,<itemCode>,<itemCode>,...
 
-        @option:
-          -no-csv: csv出力なし
-          -no-img: img出力なし
+      @option:
+        --itemCodes: 商品コードカンマ区切り
+        --nocsv    : csv出力なし
+        --noimg    : img出力なし
+
+      @example
+
+        $ bundle exec ruby shoichi.rb --itemCodes a-afashion:10002235
 
 
     itemCode #=> 楽天商品詳細 メタタグに埋め込まれています
@@ -21,6 +26,7 @@
     ./shoichi.rb
     ./data/
       |- shoichi.csv   # 商品データ
+
       |- <product_id>/ # 画像データ
       |- <product_id>/ # 画像データ
       |- <product_id>/ # 画像データ

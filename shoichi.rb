@@ -5,8 +5,9 @@
 # $ bundle exec ruby shoichi.rb --itemCodes <itemCode>,<itemCode>,<itemCode>,...
 #     @option:
 #       --itemCodes: 商品コードカンマ区切り
-#       -no-csv    : csv出力なし
-#       -no-img    : img出力なし
+#       --nocsv    : csv出力なし
+#       --nonum    : 在庫数データなし
+#       --noimg    : img出力なし
 #
 # example
 #
@@ -22,6 +23,7 @@
 #   ./shoichi.rb
 #   ./data/
 #     |- shoichi.csv   # 商品データ
+#
 #     |- <product_id>/ # 画像データ
 #     |- <product_id>/ # 画像データ
 #     |- <product_id>/ # 画像データ
@@ -46,6 +48,7 @@ OptionParser.new do |opts|
   opts.on('-h','--help'){|boo| options[:help] = boo }
   opts.on('--noimg'){|boo| options[:noimg] = boo }
   opts.on('--nocsv'){|boo| options[:nocsv] = boo }
+  opts.on('--nonum'){|boo| options[:nonum] = boo }
   opts.on("--itemCodes ITEMCODES") do |item_codes|
     options[:itemCodes] = item_codes.split(",")
   end
