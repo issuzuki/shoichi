@@ -9,7 +9,7 @@
         --noimg    : img出力なし
 
       @example
-        $ bundle exec ruby shoichi.rb --itemCodes a-afashion:10002235
+        $ bundle exec ruby shoichi.rb --itemCodes a-afashion:10002235,a-afashion:10002898
 
 
     <itemCode>
