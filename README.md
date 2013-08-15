@@ -20,6 +20,8 @@
 
 # install
 
+    $ git clone git@github.com:88labs/shoichi.git
+    $ cd shoichi
     $ bundle install
 
 
