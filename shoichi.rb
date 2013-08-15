@@ -80,6 +80,13 @@ end
 # ## insert
 # 商品データ
 if !options[:nocsv]
+
+  # ディレクトリがなければ作成
+  # ./data
+  unless Dir.exist?(File.expand_path("../data",__FILE__))
+    FileUtils.mkdir_p(File.expand_path("../data",__FILE__))
+  end
+
   CSV.open(File.expand_path('../data/shoichi.csv',__FILE__),"wb") do |csv|
     # ## header
     csv << [
